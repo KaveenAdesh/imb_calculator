@@ -4,6 +4,9 @@ void main() {
   runApp(const MyApp());
 }
 
+// Mata IMB kiyala mathaka thibila mama me code eka liwwe. passe thamai danne BMI kiyala
+
+
 Color background_color = Colors.white;
 double male = 120;
 double female = 120;
@@ -11,6 +14,8 @@ var male_female = '';
 int height = 170;
 double weight = 50;
 Color theme = Colors.black;
+double bmi = weight/(height*height)*10000;
+
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
@@ -46,7 +51,7 @@ class _home_screenState extends State<home_screen> {
 
         title: Center(
           child: Text(
-            'IMB Calculator',
+            'IBM Calculator',
             style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: theme),
           ),
 
@@ -202,7 +207,7 @@ class _home_screenState extends State<home_screen> {
 
           const SizedBox(height: 70,),
 
-         Text('BMI :',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,color: theme),),
+         Text('BMI : ${bmi.toStringAsFixed(2)}',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,color: theme),),
         ],
 
       ),
@@ -213,7 +218,8 @@ class _home_screenState extends State<home_screen> {
 
 void creat_imb (){
 
-
+bmi = weight/(height*height)*10000;
 
 
 }
+ 
