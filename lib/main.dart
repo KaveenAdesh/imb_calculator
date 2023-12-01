@@ -51,7 +51,7 @@ class _home_screenState extends State<home_screen> {
 
         title: Center(
           child: Text(
-            'IBM Calculator',
+            'BMI Calculator',
             style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: theme),
           ),
 
