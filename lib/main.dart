@@ -202,7 +202,7 @@ class _home_screenState extends State<home_screen> {
 
           const SizedBox(height: 70,),
 
-         Text('IMB :',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,color: theme),),
+         Text('BMI :',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,color: theme),),
         ],
 
       ),
